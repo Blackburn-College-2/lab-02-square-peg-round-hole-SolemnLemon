@@ -7,15 +7,12 @@ package emptyjavaproject;
 
 /**
  *
- * @author paul.kline
+ * @author sunbe
  */
-public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Square extends Rectangle{
+    Measurement sideLength;
+    public Square(Measurement l, Measurement w){
+        super(l,w);
+    this.sideLength=l;
     }
-    
 }
