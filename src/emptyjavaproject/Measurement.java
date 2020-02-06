@@ -18,12 +18,12 @@ public class Measurement {
     public Measurement(double value, String units) {
         this.value = value;
         this.units = units;
-        valueWithUnits=toString(value,units);
+        valueWithUnits=toString();
     }
 
-    public String toString(double value, String units) {
-        String s = String.valueOf(value) + " " + units;
-
+    public String toString() {
+ 
+        String s = String.valueOf(getValue()) + " " + getUnits();
         return s;
     }
 
